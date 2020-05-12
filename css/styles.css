@@ -1,12 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url("http://vanessametonini.com.br/imersaocss/a1/img/fundo.jpg");
+  background: #f2f2f7;
   background-size: auto 100vh;
-  font-family: Arial;
   height: 100vh;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+/* breakpoints */
+@media (min-width: 400px) { /* se a tela tiver pelo menos 400px, carrega estes estilos */
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section {
+  background: white;
 }
 
 .menu {
+  box-shadow: 0 1px 5px #0000001e;
   background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .menu ul {
@@ -18,21 +62,42 @@ body {
   list-style: none;
 }
 
-a {
-  color: teal;
+.menu a {
+  color: #1c1c1e;
+  display: block;
+  padding: 10px;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.site-title {
+  color: #1c1c1e;
+  text-align: center;
+  font-size: 4em;
 }
 
-.site-title,
 .site-subtitle {
-  color: whitesmoke;
+  color: #1c1c1e;
+  font-weight: lighter;
   text-align: center;
 }
 
-.site-subtitle {
-  font-style: italic;
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
+
+.down-arrow {
+  width: 100vw;
+  
+  display:flex;
+  justify-content: center; /* eixo y */
+  /*align-items: flex-end; /* eixo x */
+  position: fixed;
+  bottom: 0;
+  margin: 25px auto;
+}
+
+#img-down-arrow {
+  height: 30px;
+  width: 30px;
 }
