@@ -16,7 +16,6 @@
         <li><a href="#">Portfólio</a></li>
         <li><a href="#">Contato</a></li>
         <li>
-          <!-- <button onclick="darkmodeEnable()"></button> -->
           <label  class="switch">
             <input type="checkbox" autocomplete="off">
             <span onclick="darkmodeEnable()" class="slider round"></span>
@@ -31,31 +30,36 @@
       <span>Yeah, i like dark mode.</span>
     </div>
 
-    <a class="down-arrow"href="#portfolio"><img id="img-down-arrow"src="./img/angle-down-solid.svg" alt="down-arrow"></a>
+    <a class="down-arrow"href="#projects"><img id="img-down-arrow"src="./img/angle-down-solid.svg" alt="down-arrow"></a>
   </header>
 
-  <section id="portfolio">
-    <h2>Portfólio</h2>
-    <div class="port-img">
-      <figure>
-        <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-        <figcaption>eCommerce</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-        <figcaption>Mobile</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-        <figcaption>Web design</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-        <figcaption>Projetos pessoais</figcaption>
-      </figure>
+  <section id="projects"class="projects">
+    <h2>Projetos</h2>
+    <div class="grid">
+      <a href="https://coronabrasil.netlify.com">
+        <figure href="">
+          <img class="img-project" src="./img/corona-brasil.jpg" alt="Corona Brasil">
+          <figcaption>Corona Brasil</figcaption>
+          <p>Um website que consome uma API externa para mostrar dados do COVID-19 no Brasil.</p>
+        </figure>
+      </a>
+      <a href="">
+        <figure>
+          <img class="img-project" src="./img/dev-radar.jpg" alt=">Dev-Radar">
+          <figcaption>DevRadar</figcaption>
+          <p>App feito durante a Semana Omnistack 10, utilizando Javascript, React e ReactNative. </p>
+        </figure>
+      </a>
+      <a href="https://github.com/dlourennco/WeTime">
+        <figure>
+          <img class="img-project" src="./img/we-time.PNG" alt="Web design">
+          <figcaption>WeTime</figcaption>
+          <p>Um "site relógio" que utiliza geolocalização para exibir informações sobre o clima.</p>
+        </figure>
+      </a>
     </div>
-
   </section>
+
   <script src="darkmode.js"></script>
 </body>
 </html>
