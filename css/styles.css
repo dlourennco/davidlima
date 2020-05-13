@@ -13,6 +13,7 @@ body {
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
 }
+
 /* breakpoints */
 @media (min-width: 400px) { /* se a tela tiver pelo menos 400px, carrega estes estilos */
   body {
@@ -33,7 +34,6 @@ body {
 }
 
 header {
-
   height: 100vh;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@ header {
 }
 
 section {
-  background: white;
+  background: transparent;
 }
 
 .menu {
@@ -68,17 +68,28 @@ section {
   padding: 10px;
   text-decoration: none;
 }
+/*botão do darkmode*/
+.menu label {
+  margin: 5px 10px 5px 10px;
+}
 
 .site-title {
-  color: #1c1c1e;
   text-align: center;
   font-size: 4em;
 }
 
 .site-subtitle {
-  color: #1c1c1e;
-  font-weight: lighter;
+  font-weight: 300;
   text-align: center;
+}
+
+.titles span {
+  height: 20%;
+  color: #f2f2f7;
+  font-size: 11px;
+  display:flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .img-portfolio {
@@ -87,17 +98,37 @@ section {
 }
 
 .down-arrow {
-  width: 100vw;
-  
   display:flex;
   justify-content: center; /* eixo y */
-  /*align-items: flex-end; /* eixo x */
-  position: fixed;
-  bottom: 0;
-  margin: 25px auto;
+  margin-bottom: 25px;
 }
 
 #img-down-arrow {
   height: 30px;
   width: 30px;
+}
+/* dark mode */
+.dark-mode {
+  background: black;
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.dark-header {
+  background: black;
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.dark-svg {
+  fill: white;
+}
+
+.dark-section {
+  background: black;
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
