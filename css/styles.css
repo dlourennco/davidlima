@@ -98,7 +98,7 @@ section {
 .down-arrow {
   position: absolute;
   bottom: 0;
-  margin: 40px;
+  margin-bottom: 38px;
 }
 
 #img-down-arrow {
