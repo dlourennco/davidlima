@@ -98,9 +98,9 @@ section {
 }
 
 .down-arrow {
-  display:flex;
-  justify-content: center; /* eixo y */
-  margin-bottom: 25px;
+  position: absolute;
+  bottom: 0;
+  margin: 40px;
 }
 
 #img-down-arrow {
