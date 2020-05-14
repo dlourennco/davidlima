@@ -41,8 +41,8 @@ header {
   flex-wrap: wrap;
 }
 
-section {
-  background: transparent;
+a {
+  text-decoration: none;
 }
 
 .menu {
@@ -69,6 +69,16 @@ section {
   padding: 10px;
   font-weight: 300;
   text-decoration: none;
+  transition: color 0.8s;
+}
+
+.menu a:active {
+  background: #e9e9e9;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  color: dodgerblue;
 }
 /*botão do darkmode*/
 .menu label {
@@ -105,18 +115,20 @@ section {
   height: 30px;
   width: 30px;
 }
-/* section */
-.projects {
+/* section projetos */
+.projects, .contato {
   padding: 2em;
+  min-height: 100vh; 
 }
 
 .projects h2 {
   padding-bottom: 1.4em;
+  margin-top: 10px;
 }
 
 .projects .grid {
   display: grid;
-  gap: 2em 4em;
+  gap: 3em 5em;
   justify-content: center;
 }
 
@@ -139,8 +151,16 @@ section {
 /* imagens da section */
 .projects figure {
   width: 260px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   border-radius: 5px;
+  background: white;
+  color: black;
+  transition: transform 500ms;
+  transition: box-shadow 500ms;
+}
+
+figure:hover {
+  transform: scale(1.15);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.247);
 }
 
@@ -150,7 +170,7 @@ section {
 }
 
 .projects figure p {
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 12px;
   font-weight: 300;
   text-align: center;
@@ -173,25 +193,17 @@ section {
   transition: .4s;
 }
 
-.dark-header {
-  background: black;
-  color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+/* section contato */
+.contato .icons {
+  text-align: center;
 }
 
-.dark-svg {
-  fill: white;
-}
-
-.dark-section {
-  background: black;
-  color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.dark-figure {
-  background: white;
+.contato a {
   color: #1c1c1e;
+  font-size: 4em;
+  transition: text-shadow 0.5s;
+}
+
+.contato a:hover {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
