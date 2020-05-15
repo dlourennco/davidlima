@@ -13,6 +13,8 @@ body {
   height: 100vh;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 /* breakpoints */
@@ -111,7 +113,11 @@ a {
   margin-bottom: 38px;
   color: #1c1c1e;
   font-size: 1.5em;
+  transition: text-shadow 500ms;
+}
 
+.down-arrow:hover {
+  text-shadow: 0px 0px 10px #00000080;
 }
 
 #img-down-arrow {

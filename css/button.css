@@ -23,7 +23,7 @@
   transition: .4s;
 }
 
-.slider:before { /* bolinha unchecked */
+.slider:before { /* bolinha un */
   position: absolute;
   content: "";
   height: 26px;
