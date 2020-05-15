@@ -12,11 +12,11 @@
 <body>
   
   <header>
-    <nav class="menu">
+    <nav id="id-menu"class="menu">
       <ul>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="https://github.com/dlourennco">GitHub</a></li>
+        <li><a href="#id-projects">Projetos</a></li>
+        <li><a href="#id-contato">Contato</a></li>
         <li>
           <label  class="switch">
             <input type="checkbox" autocomplete="off">
@@ -32,7 +32,7 @@
       <span>Yeah, i like dark mode.</span>
     </div>
 
-    <a class="down-arrow"href="#id-projects"><i class="fas fa-angle-down"></i></a>
+    <a class="down-arrow"href="#id-projects"><i id="arrow" class="fas fa-angle-down"></i></a>
   </header>
 
   <section id="id-projects" class="projects">
@@ -64,20 +64,23 @@
 
   <section id="id-contato "class="contato">
     <h2>Contato</h2>
-    <div class="grid icons">
+    <div id="id-icons" class="grid icons">
       <a target="_blank" href="https://github.com/dlourennco">
-        <i class="fab fa-github contact-icons"></i>
+        <i id="github" class="fab fa-github contact-icons"></i>
       </a>
       <a target="_blank" href="https://twitter.com/dlourennco">
-        <i class="fab fa-twitter contact-icons"></i>
+        <i id="twitter" class="fab fa-twitter contact-icons"></i>
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/david-lourenco-lima/">
-        <i class="fab fa-linkedin contact-icons"></i>
+        <i id="linkedin" class="fab fa-linkedin contact-icons"></i>
       </a>
       <a href="mailto:davidlimalourenco@gmail.com">
-        <i class="fas fa-envelope contact-icons"></i>
+        <i id="email" class="fas fa-envelope contact-icons"></i>
       </a>
     </div>
-  </section>|
+  </section>
+  <footer class="footer">
+    <p>made with <span>❤</span> by @dlourennco</p>
+  </footer>
 </body>
 </html>

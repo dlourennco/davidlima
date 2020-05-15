@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap');
 
 * {
   margin: 0;
@@ -47,7 +48,7 @@ a {
 
 .menu {
   box-shadow: 0 1px 5px #0000001e;
-  background-color: rgb(248, 248, 248);
+  background-color: #f8f8f8;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -65,7 +66,8 @@ a {
 }
 
 .menu a {
-  color: #1c1c1e;
+  /*color: #1c1c1e;*/
+  color: inherit;
   display: block;
   padding: 10px;
   font-weight: 300;
@@ -157,6 +159,7 @@ a {
 .projects figure {
   width: 260px;
   padding-bottom: 5px;
+  border: 1px gainsboro solid;
   border-radius: 5px;
   background: white;
   color: black;
@@ -165,7 +168,7 @@ a {
 
 figure:hover {
   transform: scale(1.15);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.247);
+  box-shadow: 0px 20px 20px #0000003f;
 }
 
 .projects figcaption{
@@ -182,7 +185,7 @@ figure:hover {
 
 .img-project {
   height: 180px;
-  width: 260px;
+  width: 258px;
   object-fit: cover; /* evita a deformação de imagens, as img terão a mesma proporção estabelecida acima */ 
   object-position: left bottom;
   border-top-left-radius: 4px;
@@ -190,11 +193,16 @@ figure:hover {
 }
 
 /* section contato */
+.contato {
+  padding: 1em 2em;
+  max-height: 100vh; 
+}
+
 .contato .icons {
   display: flex;
-  justify-content: center;
-  gap: 6em;
+  justify-content: space-around;
   text-align: center;
+  padding: 25px;
 }
 
 .contato a {
@@ -204,18 +212,50 @@ figure:hover {
 }
 
 .contato a:hover {
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 10px #00000080;
 }
 
+.footer {
+  margin-bottom: 0.5em;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.footer:hover span {
+  color: #ff2f2f
+}
+
+/* dark mode */
 /*botão do darkmode*/
 .menu label {
   margin: 5px;
 }
 
-/* dark mode */
 .dark-mode {
-  background: black;
+  background: #161616;
   color: white;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+.dark-menu {
+  background: #0c0c0c;
+  color: white;
+}
+
+.dark-projects figure {
+  background: #111111;
+  color: white;
+  border: 1px rgb(8, 8, 8) solid;
+}
+
+.dark-icons {
+  color: white;
+  transition: text-shadow 0.5s;
+}
+
+.dark-icons:hover{
+  text-shadow: 0px 0px 10px #fcfcfcc7;
 }
