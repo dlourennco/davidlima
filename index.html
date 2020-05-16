@@ -8,12 +8,13 @@
   <script src="https://kit.fontawesome.com/b56e2e6faa.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/button.css">
+  
 </head>
 <body>
   
   <header>
     <nav id="id-menu"class="menu">
-      <ul>
+      <ul class="container">
         <li><a href="https://github.com/dlourennco">GitHub</a></li>
         <li><a href="#id-projects">Projetos</a></li>
         <li><a href="#id-contato">Contato</a></li>
@@ -35,7 +36,31 @@
     <a class="down-arrow"href="#id-projects"><i id="arrow" class="fas fa-angle-down"></i></a>
   </header>
 
-  <section id="id-projects" class="projects">
+  <section class="sobre container">
+    <h2>Sobre</h2>
+
+    <figure>
+      <img class="avatar" src="./img/20181013_151424 (1).jpg" alt="David Lima">
+    </figure>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, veritatis odio? Veritatis illo velit, delectus maxime ipsum laudantium atque obcaecati aperiam quisquam exercitationem pariatur quod ab nobis sit architecto odit!
+    </p>
+
+    <p>
+      Aperiam perferendis pariatur totam aspernatur. Explicabo harum vel accusantium dignissimos porro quaerat sapiente enim earum veniam, at assumenda veritatis quibusdam? Reiciendis, illum eos! Reiciendis mollitia ab expedita quae, autem temporibus.
+    </p>
+
+    <p>
+      Eum harum commodi vel iusto accusantium, cum quam facere aut. Fugiat aut, quisquam facere minus impedit consequatur officiis corporis iste esse a explicabo eius ad fugit natus beatae numquam illo.
+    </p>
+
+    <p>
+      Este site foi construido durante a <a href="">Imersão CSS</a> da Alura :)
+    </p>
+  </section>
+
+  <section id="id-projects" class="projects container">
     <h2>Projetos</h2>
     <div class="grid">
       <a href="https://coronabrasil.netlify.com">
@@ -62,7 +87,7 @@
     </div>
   </section>
 
-  <section id="id-contato "class="contato">
+  <section id="id-contato "class="contato container">
     <h2>Contato</h2>
     <div id="id-icons" class="grid icons">
       <a target="_blank" href="https://github.com/dlourennco">
@@ -79,7 +104,7 @@
       </a>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer container">
     <p>made with <span>❤</span> by @dlourennco</p>
   </footer>
 </body>
