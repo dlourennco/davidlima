@@ -159,8 +159,7 @@ a {
   border-radius: 50%;
   height: 250px;
   width: 250px;
-  object-fit: cover;
-  transform: rotate(90deg);
+  /*object-fit: cover;*/
 }
 
 
